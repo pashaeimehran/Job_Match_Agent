@@ -1,0 +1,746 @@
+[
+  {
+    "id": "fixture-01",
+    "raw_text": "AI Engineer - Berlin\nWe are hiring a AI Engineer. Required skills: Python, LangGraph, Azure.\nAt least 3 years of professional experience are required.\nLanguage requirements: English and German.",
+    "expected": {
+      "role": "AI Engineer",
+      "skills": [
+        "Python",
+        "LangGraph",
+        "Azure"
+      ],
+      "experience_years": 3,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Berlin"
+    }
+  },
+  {
+    "id": "fixture-02",
+    "raw_text": "Join our team in Berlin as a AI Engineer.\nYour toolkit should include Python, LangGraph, Azure. At least 3 years of professional experience are required.\nYou should work professionally in English and German.",
+    "expected": {
+      "role": "AI Engineer",
+      "skills": [
+        "Python",
+        "LangGraph",
+        "Azure"
+      ],
+      "experience_years": 3,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Berlin"
+    }
+  },
+  {
+    "id": "fixture-03",
+    "raw_text": "<h1>AI Engineer</h1><p>Location: Berlin</p><p>We need hands-on skills in Python, LangGraph, Azure.</p><p>At least 3 years of professional experience are required.</p><p>Languages: English and German.</p><p>Apply now</p>",
+    "expected": {
+      "role": "AI Engineer",
+      "skills": [
+        "Python",
+        "LangGraph",
+        "Azure"
+      ],
+      "experience_years": 3,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Berlin"
+    }
+  },
+  {
+    "id": "fixture-04",
+    "raw_text": "Position: AI Engineer\nWork location: Berlin\nMust-have competencies: Python, LangGraph, Azure.\nAt least 3 years of professional experience are required.\nCommunication languages: English and German.\nSave job",
+    "expected": {
+      "role": "AI Engineer",
+      "skills": [
+        "Python",
+        "LangGraph",
+        "Azure"
+      ],
+      "experience_years": 3,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Berlin"
+    }
+  },
+  {
+    "id": "fixture-05",
+    "raw_text": "Senior GenAI Engineer - Munich\nWe are hiring a Senior GenAI Engineer. Required skills: Python, RAG, LangChain, Azure OpenAI.\nAt least 5 years of professional experience are required.\nLanguage requirements: English.",
+    "expected": {
+      "role": "Senior GenAI Engineer",
+      "skills": [
+        "Python",
+        "RAG",
+        "LangChain",
+        "Azure OpenAI"
+      ],
+      "experience_years": 5,
+      "language": [
+        "English"
+      ],
+      "seniority": "Senior",
+      "location": "Munich"
+    }
+  },
+  {
+    "id": "fixture-06",
+    "raw_text": "Join our team in Munich as a Senior GenAI Engineer.\nYour toolkit should include Python, RAG, LangChain, Azure OpenAI. At least 5 years of professional experience are required.\nYou should work professionally in English.",
+    "expected": {
+      "role": "Senior GenAI Engineer",
+      "skills": [
+        "Python",
+        "RAG",
+        "LangChain",
+        "Azure OpenAI"
+      ],
+      "experience_years": 5,
+      "language": [
+        "English"
+      ],
+      "seniority": "Senior",
+      "location": "Munich"
+    }
+  },
+  {
+    "id": "fixture-07",
+    "raw_text": "<h1>Senior GenAI Engineer</h1><p>Location: Munich</p><p>We need hands-on skills in Python, RAG, LangChain, Azure OpenAI.</p><p>At least 5 years of professional experience are required.</p><p>Languages: English.</p><p>Apply now</p>",
+    "expected": {
+      "role": "Senior GenAI Engineer",
+      "skills": [
+        "Python",
+        "RAG",
+        "LangChain",
+        "Azure OpenAI"
+      ],
+      "experience_years": 5,
+      "language": [
+        "English"
+      ],
+      "seniority": "Senior",
+      "location": "Munich"
+    }
+  },
+  {
+    "id": "fixture-08",
+    "raw_text": "Position: Senior GenAI Engineer\nWork location: Munich\nMust-have competencies: Python, RAG, LangChain, Azure OpenAI.\nAt least 5 years of professional experience are required.\nCommunication languages: English.\nSave job",
+    "expected": {
+      "role": "Senior GenAI Engineer",
+      "skills": [
+        "Python",
+        "RAG",
+        "LangChain",
+        "Azure OpenAI"
+      ],
+      "experience_years": 5,
+      "language": [
+        "English"
+      ],
+      "seniority": "Senior",
+      "location": "Munich"
+    }
+  },
+  {
+    "id": "fixture-09",
+    "raw_text": "Machine Learning Engineer - Hamburg\nWe are hiring a Machine Learning Engineer. Required skills: Python, PyTorch, Docker.\nRelevant professional experience is expected, but no exact number of years is specified.\nLanguage requirements: English.",
+    "expected": {
+      "role": "Machine Learning Engineer",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Docker"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Hamburg"
+    }
+  },
+  {
+    "id": "fixture-10",
+    "raw_text": "Join our team in Hamburg as a Machine Learning Engineer.\nYour toolkit should include Python, PyTorch, Docker. Relevant professional experience is expected, but no exact number of years is specified.\nYou should work professionally in English.",
+    "expected": {
+      "role": "Machine Learning Engineer",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Docker"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Hamburg"
+    }
+  },
+  {
+    "id": "fixture-11",
+    "raw_text": "<h1>Machine Learning Engineer</h1><p>Location: Hamburg</p><p>We need hands-on skills in Python, PyTorch, Docker.</p><p>Relevant professional experience is expected, but no exact number of years is specified.</p><p>Languages: English.</p><p>Apply now</p>",
+    "expected": {
+      "role": "Machine Learning Engineer",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Docker"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Hamburg"
+    }
+  },
+  {
+    "id": "fixture-12",
+    "raw_text": "Position: Machine Learning Engineer\nWork location: Hamburg\nMust-have competencies: Python, PyTorch, Docker.\nRelevant professional experience is expected, but no exact number of years is specified.\nCommunication languages: English.\nSave job",
+    "expected": {
+      "role": "Machine Learning Engineer",
+      "skills": [
+        "Python",
+        "PyTorch",
+        "Docker"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Hamburg"
+    }
+  },
+  {
+    "id": "fixture-13",
+    "raw_text": "Applied AI Engineer - Cologne\nWe are hiring a Applied AI Engineer. Required skills: Python, FastAPI, PostgreSQL.\nAt least 2 years of professional experience are required.\nLanguage requirements: German and English.",
+    "expected": {
+      "role": "Applied AI Engineer",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "experience_years": 2,
+      "language": [
+        "German",
+        "English"
+      ],
+      "seniority": null,
+      "location": "Cologne"
+    }
+  },
+  {
+    "id": "fixture-14",
+    "raw_text": "Join our team in Cologne as a Applied AI Engineer.\nYour toolkit should include Python, FastAPI, PostgreSQL. At least 2 years of professional experience are required.\nYou should work professionally in German and English.",
+    "expected": {
+      "role": "Applied AI Engineer",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "experience_years": 2,
+      "language": [
+        "German",
+        "English"
+      ],
+      "seniority": null,
+      "location": "Cologne"
+    }
+  },
+  {
+    "id": "fixture-15",
+    "raw_text": "<h1>Applied AI Engineer</h1><p>Location: Cologne</p><p>We need hands-on skills in Python, FastAPI, PostgreSQL.</p><p>At least 2 years of professional experience are required.</p><p>Languages: German and English.</p><p>Apply now</p>",
+    "expected": {
+      "role": "Applied AI Engineer",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "experience_years": 2,
+      "language": [
+        "German",
+        "English"
+      ],
+      "seniority": null,
+      "location": "Cologne"
+    }
+  },
+  {
+    "id": "fixture-16",
+    "raw_text": "Position: Applied AI Engineer\nWork location: Cologne\nMust-have competencies: Python, FastAPI, PostgreSQL.\nAt least 2 years of professional experience are required.\nCommunication languages: German and English.\nSave job",
+    "expected": {
+      "role": "Applied AI Engineer",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "experience_years": 2,
+      "language": [
+        "German",
+        "English"
+      ],
+      "seniority": null,
+      "location": "Cologne"
+    }
+  },
+  {
+    "id": "fixture-17",
+    "raw_text": "AI Platform Engineer - Frankfurt\nWe are hiring a AI Platform Engineer. Required skills: Python, Docker, Kubernetes, Azure.\nAt least 4 years of professional experience are required.\nLanguage requirements: English.",
+    "expected": {
+      "role": "AI Platform Engineer",
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "Azure"
+      ],
+      "experience_years": 4,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Frankfurt"
+    }
+  },
+  {
+    "id": "fixture-18",
+    "raw_text": "Join our team in Frankfurt as a AI Platform Engineer.\nYour toolkit should include Python, Docker, Kubernetes, Azure. At least 4 years of professional experience are required.\nYou should work professionally in English.",
+    "expected": {
+      "role": "AI Platform Engineer",
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "Azure"
+      ],
+      "experience_years": 4,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Frankfurt"
+    }
+  },
+  {
+    "id": "fixture-19",
+    "raw_text": "<h1>AI Platform Engineer</h1><p>Location: Frankfurt</p><p>We need hands-on skills in Python, Docker, Kubernetes, Azure.</p><p>At least 4 years of professional experience are required.</p><p>Languages: English.</p><p>Apply now</p>",
+    "expected": {
+      "role": "AI Platform Engineer",
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "Azure"
+      ],
+      "experience_years": 4,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Frankfurt"
+    }
+  },
+  {
+    "id": "fixture-20",
+    "raw_text": "Position: AI Platform Engineer\nWork location: Frankfurt\nMust-have competencies: Python, Docker, Kubernetes, Azure.\nAt least 4 years of professional experience are required.\nCommunication languages: English.\nSave job",
+    "expected": {
+      "role": "AI Platform Engineer",
+      "skills": [
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "Azure"
+      ],
+      "experience_years": 4,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Frankfurt"
+    }
+  },
+  {
+    "id": "fixture-21",
+    "raw_text": "LLM Engineer - Remote Germany\nWe are hiring a LLM Engineer. Required skills: Python, OpenAI API, Pydantic.\nRelevant professional experience is expected, but no exact number of years is specified.\nLanguage requirements: English.",
+    "expected": {
+      "role": "LLM Engineer",
+      "skills": [
+        "Python",
+        "OpenAI API",
+        "Pydantic"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Remote Germany"
+    }
+  },
+  {
+    "id": "fixture-22",
+    "raw_text": "Join our team in Remote Germany as a LLM Engineer.\nYour toolkit should include Python, OpenAI API, Pydantic. Relevant professional experience is expected, but no exact number of years is specified.\nYou should work professionally in English.",
+    "expected": {
+      "role": "LLM Engineer",
+      "skills": [
+        "Python",
+        "OpenAI API",
+        "Pydantic"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Remote Germany"
+    }
+  },
+  {
+    "id": "fixture-23",
+    "raw_text": "<h1>LLM Engineer</h1><p>Location: Remote Germany</p><p>We need hands-on skills in Python, OpenAI API, Pydantic.</p><p>Relevant professional experience is expected, but no exact number of years is specified.</p><p>Languages: English.</p><p>Apply now</p>",
+    "expected": {
+      "role": "LLM Engineer",
+      "skills": [
+        "Python",
+        "OpenAI API",
+        "Pydantic"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Remote Germany"
+    }
+  },
+  {
+    "id": "fixture-24",
+    "raw_text": "Position: LLM Engineer\nWork location: Remote Germany\nMust-have competencies: Python, OpenAI API, Pydantic.\nRelevant professional experience is expected, but no exact number of years is specified.\nCommunication languages: English.\nSave job",
+    "expected": {
+      "role": "LLM Engineer",
+      "skills": [
+        "Python",
+        "OpenAI API",
+        "Pydantic"
+      ],
+      "experience_years": null,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Remote Germany"
+    }
+  },
+  {
+    "id": "fixture-25",
+    "raw_text": "Junior AI Engineer - Stuttgart\nWe are hiring a Junior AI Engineer. Required skills: Python, SQL, Git.\nAt least 1 years of professional experience are required.\nLanguage requirements: English and German.",
+    "expected": {
+      "role": "Junior AI Engineer",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git"
+      ],
+      "experience_years": 1,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": "Junior",
+      "location": "Stuttgart"
+    }
+  },
+  {
+    "id": "fixture-26",
+    "raw_text": "Join our team in Stuttgart as a Junior AI Engineer.\nYour toolkit should include Python, SQL, Git. At least 1 years of professional experience are required.\nYou should work professionally in English and German.",
+    "expected": {
+      "role": "Junior AI Engineer",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git"
+      ],
+      "experience_years": 1,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": "Junior",
+      "location": "Stuttgart"
+    }
+  },
+  {
+    "id": "fixture-27",
+    "raw_text": "<h1>Junior AI Engineer</h1><p>Location: Stuttgart</p><p>We need hands-on skills in Python, SQL, Git.</p><p>At least 1 years of professional experience are required.</p><p>Languages: English and German.</p><p>Apply now</p>",
+    "expected": {
+      "role": "Junior AI Engineer",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git"
+      ],
+      "experience_years": 1,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": "Junior",
+      "location": "Stuttgart"
+    }
+  },
+  {
+    "id": "fixture-28",
+    "raw_text": "Position: Junior AI Engineer\nWork location: Stuttgart\nMust-have competencies: Python, SQL, Git.\nAt least 1 years of professional experience are required.\nCommunication languages: English and German.\nSave job",
+    "expected": {
+      "role": "Junior AI Engineer",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git"
+      ],
+      "experience_years": 1,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": "Junior",
+      "location": "Stuttgart"
+    }
+  },
+  {
+    "id": "fixture-29",
+    "raw_text": "Generative AI Developer - Nuremberg\nWe are hiring a Generative AI Developer. Required skills: Python, RAG, pgvector.\nAt least 3 years of professional experience are required.\nLanguage requirements: German.",
+    "expected": {
+      "role": "Generative AI Developer",
+      "skills": [
+        "Python",
+        "RAG",
+        "pgvector"
+      ],
+      "experience_years": 3,
+      "language": [
+        "German"
+      ],
+      "seniority": null,
+      "location": "Nuremberg"
+    }
+  },
+  {
+    "id": "fixture-30",
+    "raw_text": "Join our team in Nuremberg as a Generative AI Developer.\nYour toolkit should include Python, RAG, pgvector. At least 3 years of professional experience are required.\nYou should work professionally in German.",
+    "expected": {
+      "role": "Generative AI Developer",
+      "skills": [
+        "Python",
+        "RAG",
+        "pgvector"
+      ],
+      "experience_years": 3,
+      "language": [
+        "German"
+      ],
+      "seniority": null,
+      "location": "Nuremberg"
+    }
+  },
+  {
+    "id": "fixture-31",
+    "raw_text": "<h1>Generative AI Developer</h1><p>Location: Nuremberg</p><p>We need hands-on skills in Python, RAG, pgvector.</p><p>At least 3 years of professional experience are required.</p><p>Languages: German.</p><p>Apply now</p>",
+    "expected": {
+      "role": "Generative AI Developer",
+      "skills": [
+        "Python",
+        "RAG",
+        "pgvector"
+      ],
+      "experience_years": 3,
+      "language": [
+        "German"
+      ],
+      "seniority": null,
+      "location": "Nuremberg"
+    }
+  },
+  {
+    "id": "fixture-32",
+    "raw_text": "Position: Generative AI Developer\nWork location: Nuremberg\nMust-have competencies: Python, RAG, pgvector.\nAt least 3 years of professional experience are required.\nCommunication languages: German.\nSave job",
+    "expected": {
+      "role": "Generative AI Developer",
+      "skills": [
+        "Python",
+        "RAG",
+        "pgvector"
+      ],
+      "experience_years": 3,
+      "language": [
+        "German"
+      ],
+      "seniority": null,
+      "location": "Nuremberg"
+    }
+  },
+  {
+    "id": "fixture-33",
+    "raw_text": "AI Solutions Engineer - Heidelberg\nWe are hiring a AI Solutions Engineer. Required skills: Python, REST APIs, Azure.\nRelevant professional experience is expected, but no exact number of years is specified.\nLanguage requirements: English and German.",
+    "expected": {
+      "role": "AI Solutions Engineer",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Azure"
+      ],
+      "experience_years": null,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Heidelberg"
+    }
+  },
+  {
+    "id": "fixture-34",
+    "raw_text": "Join our team in Heidelberg as a AI Solutions Engineer.\nYour toolkit should include Python, REST APIs, Azure. Relevant professional experience is expected, but no exact number of years is specified.\nYou should work professionally in English and German.",
+    "expected": {
+      "role": "AI Solutions Engineer",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Azure"
+      ],
+      "experience_years": null,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Heidelberg"
+    }
+  },
+  {
+    "id": "fixture-35",
+    "raw_text": "<h1>AI Solutions Engineer</h1><p>Location: Heidelberg</p><p>We need hands-on skills in Python, REST APIs, Azure.</p><p>Relevant professional experience is expected, but no exact number of years is specified.</p><p>Languages: English and German.</p><p>Apply now</p>",
+    "expected": {
+      "role": "AI Solutions Engineer",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Azure"
+      ],
+      "experience_years": null,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Heidelberg"
+    }
+  },
+  {
+    "id": "fixture-36",
+    "raw_text": "Position: AI Solutions Engineer\nWork location: Heidelberg\nMust-have competencies: Python, REST APIs, Azure.\nRelevant professional experience is expected, but no exact number of years is specified.\nCommunication languages: English and German.\nSave job",
+    "expected": {
+      "role": "AI Solutions Engineer",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Azure"
+      ],
+      "experience_years": null,
+      "language": [
+        "English",
+        "German"
+      ],
+      "seniority": null,
+      "location": "Heidelberg"
+    }
+  },
+  {
+    "id": "fixture-37",
+    "raw_text": "NLP Engineer - Dusseldorf\nWe are hiring a NLP Engineer. Required skills: Python, Hugging Face, PyTorch.\nAt least 2 years of professional experience are required.\nLanguage requirements: English.",
+    "expected": {
+      "role": "NLP Engineer",
+      "skills": [
+        "Python",
+        "Hugging Face",
+        "PyTorch"
+      ],
+      "experience_years": 2,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Dusseldorf"
+    }
+  },
+  {
+    "id": "fixture-38",
+    "raw_text": "Join our team in Dusseldorf as a NLP Engineer.\nYour toolkit should include Python, Hugging Face, PyTorch. At least 2 years of professional experience are required.\nYou should work professionally in English.",
+    "expected": {
+      "role": "NLP Engineer",
+      "skills": [
+        "Python",
+        "Hugging Face",
+        "PyTorch"
+      ],
+      "experience_years": 2,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Dusseldorf"
+    }
+  },
+  {
+    "id": "fixture-39",
+    "raw_text": "<h1>NLP Engineer</h1><p>Location: Dusseldorf</p><p>We need hands-on skills in Python, Hugging Face, PyTorch.</p><p>At least 2 years of professional experience are required.</p><p>Languages: English.</p><p>Apply now</p>",
+    "expected": {
+      "role": "NLP Engineer",
+      "skills": [
+        "Python",
+        "Hugging Face",
+        "PyTorch"
+      ],
+      "experience_years": 2,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Dusseldorf"
+    }
+  },
+  {
+    "id": "fixture-40",
+    "raw_text": "Position: NLP Engineer\nWork location: Dusseldorf\nMust-have competencies: Python, Hugging Face, PyTorch.\nAt least 2 years of professional experience are required.\nCommunication languages: English.\nSave job",
+    "expected": {
+      "role": "NLP Engineer",
+      "skills": [
+        "Python",
+        "Hugging Face",
+        "PyTorch"
+      ],
+      "experience_years": 2,
+      "language": [
+        "English"
+      ],
+      "seniority": null,
+      "location": "Dusseldorf"
+    }
+  }
+]

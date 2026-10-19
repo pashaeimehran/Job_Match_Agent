@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+Roadmap/
+Workspace.code-workspace
+sandbox.py
+data/ba_jobs.json
+week1_*.patch
+pytest-cache-files-*

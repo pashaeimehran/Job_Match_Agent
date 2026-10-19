@@ -1,0 +1,1461 @@
+{
+  "model": "gpt-4o-mini",
+  "cases_requested": 40,
+  "extractions_succeeded": 40,
+  "extraction_success_rate": 1.0,
+  "exact_case_pass_rate": 1.0,
+  "missing_field_count": 0,
+  "hallucinated_field_count": 0,
+  "mismatched_field_count": 0,
+  "extraction_failures": [],
+  "results": [
+    {
+      "id": "fixture-01",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      },
+      "actual": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      }
+    },
+    {
+      "id": "fixture-02",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      },
+      "actual": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      }
+    },
+    {
+      "id": "fixture-03",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      },
+      "actual": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      }
+    },
+    {
+      "id": "fixture-04",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      },
+      "actual": {
+        "role": "AI Engineer",
+        "skills": [
+          "Python",
+          "LangGraph",
+          "Azure"
+        ],
+        "experience_years": 3,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Berlin"
+      }
+    },
+    {
+      "id": "fixture-05",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      },
+      "actual": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      }
+    },
+    {
+      "id": "fixture-06",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      },
+      "actual": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      }
+    },
+    {
+      "id": "fixture-07",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      },
+      "actual": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      }
+    },
+    {
+      "id": "fixture-08",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      },
+      "actual": {
+        "role": "Senior GenAI Engineer",
+        "skills": [
+          "Python",
+          "RAG",
+          "LangChain",
+          "Azure OpenAI"
+        ],
+        "experience_years": 5,
+        "language": [
+          "English"
+        ],
+        "seniority": "Senior",
+        "location": "Munich"
+      }
+    },
+    {
+      "id": "fixture-09",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      },
+      "actual": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      }
+    },
+    {
+      "id": "fixture-10",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      },
+      "actual": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      }
+    },
+    {
+      "id": "fixture-11",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      },
+      "actual": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      }
+    },
+    {
+      "id": "fixture-12",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      },
+      "actual": {
+        "role": "Machine Learning Engineer",
+        "skills": [
+          "Python",
+          "PyTorch",
+          "Docker"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Hamburg"
+      }
+    },
+    {
+      "id": "fixture-13",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      },
+      "actual": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      }
+    },
+    {
+      "id": "fixture-14",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      },
+      "actual": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      }
+    },
+    {
+      "id": "fixture-15",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      },
+      "actual": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      }
+    },
+    {
+      "id": "fixture-16",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      },
+      "actual": {
+        "role": "Applied AI Engineer",
+        "skills": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "experience_years": 2,
+        "language": [
+          "German",
+          "English"
+        ],
+        "seniority": null,
+        "location": "Cologne"
+      }
+    },
+    {
+      "id": "fixture-17",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      },
+      "actual": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      }
+    },
+    {
+      "id": "fixture-18",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      },
+      "actual": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      }
+    },
+    {
+      "id": "fixture-19",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      },
+      "actual": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      }
+    },
+    {
+      "id": "fixture-20",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      },
+      "actual": {
+        "role": "AI Platform Engineer",
+        "skills": [
+          "Python",
+          "Docker",
+          "Kubernetes",
+          "Azure"
+        ],
+        "experience_years": 4,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Frankfurt"
+      }
+    },
+    {
+      "id": "fixture-21",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      },
+      "actual": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      }
+    },
+    {
+      "id": "fixture-22",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      },
+      "actual": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      }
+    },
+    {
+      "id": "fixture-23",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      },
+      "actual": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      }
+    },
+    {
+      "id": "fixture-24",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      },
+      "actual": {
+        "role": "LLM Engineer",
+        "skills": [
+          "Python",
+          "OpenAI API",
+          "Pydantic"
+        ],
+        "experience_years": null,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Remote Germany"
+      }
+    },
+    {
+      "id": "fixture-25",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      },
+      "actual": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      }
+    },
+    {
+      "id": "fixture-26",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      },
+      "actual": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      }
+    },
+    {
+      "id": "fixture-27",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      },
+      "actual": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      }
+    },
+    {
+      "id": "fixture-28",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      },
+      "actual": {
+        "role": "Junior AI Engineer",
+        "skills": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "experience_years": 1,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": "Junior",
+        "location": "Stuttgart"
+      }
+    },
+    {
+      "id": "fixture-29",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      },
+      "actual": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      }
+    },
+    {
+      "id": "fixture-30",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      },
+      "actual": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      }
+    },
+    {
+      "id": "fixture-31",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      },
+      "actual": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      }
+    },
+    {
+      "id": "fixture-32",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      },
+      "actual": {
+        "role": "Generative AI Developer",
+        "skills": [
+          "Python",
+          "RAG",
+          "pgvector"
+        ],
+        "experience_years": 3,
+        "language": [
+          "German"
+        ],
+        "seniority": null,
+        "location": "Nuremberg"
+      }
+    },
+    {
+      "id": "fixture-33",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      },
+      "actual": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      }
+    },
+    {
+      "id": "fixture-34",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      },
+      "actual": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      }
+    },
+    {
+      "id": "fixture-35",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      },
+      "actual": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      }
+    },
+    {
+      "id": "fixture-36",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      },
+      "actual": {
+        "role": "AI Solutions Engineer",
+        "skills": [
+          "Python",
+          "REST APIs",
+          "Azure"
+        ],
+        "experience_years": null,
+        "language": [
+          "English",
+          "German"
+        ],
+        "seniority": null,
+        "location": "Heidelberg"
+      }
+    },
+    {
+      "id": "fixture-37",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      },
+      "actual": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      }
+    },
+    {
+      "id": "fixture-38",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      },
+      "actual": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      }
+    },
+    {
+      "id": "fixture-39",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      },
+      "actual": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      }
+    },
+    {
+      "id": "fixture-40",
+      "passed": true,
+      "missing_fields": [],
+      "hallucinated_fields": [],
+      "mismatched_fields": [],
+      "expected": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      },
+      "actual": {
+        "role": "NLP Engineer",
+        "skills": [
+          "Python",
+          "Hugging Face",
+          "PyTorch"
+        ],
+        "experience_years": 2,
+        "language": [
+          "English"
+        ],
+        "seniority": null,
+        "location": "Dusseldorf"
+      }
+    }
+  ]
+}
