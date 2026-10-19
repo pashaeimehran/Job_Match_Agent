@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q01",
+    "question": "Which programming languages are listed?",
+    "expected_section": "Programming",
+    "expected_quote": "Python for data processing and model training."
+  },
+  {
+    "id": "q02",
+    "question": "What was C++ used for?",
+    "expected_section": "Programming",
+    "expected_quote": "C++ for embedded software."
+  },
+  {
+    "id": "q03",
+    "question": "Which model training frameworks were used?",
+    "expected_section": "Machine Learning",
+    "expected_quote": "PyTorch and scikit-learn"
+  },
+  {
+    "id": "q04",
+    "question": "What metrics evaluated the classification models?",
+    "expected_section": "Machine Learning",
+    "expected_quote": "precision, recall and F1"
+  },
+  {
+    "id": "q05",
+    "question": "Which database supported vector retrieval?",
+    "expected_section": "Retrieval Project",
+    "expected_quote": "PostgreSQL pgvector"
+  },
+  {
+    "id": "q06",
+    "question": "How was similarity search compared?",
+    "expected_section": "Retrieval Project",
+    "expected_quote": "cosine similarity search against a lexical baseline"
+  },
+  {
+    "id": "q07",
+    "question": "Which framework served REST endpoints?",
+    "expected_section": "Backend Project",
+    "expected_quote": "FastAPI service"
+  },
+  {
+    "id": "q08",
+    "question": "How were unit tests implemented?",
+    "expected_section": "Backend Project",
+    "expected_quote": "pytest unit tests using fake dependencies"
+  },
+  {
+    "id": "q09",
+    "question": "What automated deployment checks?",
+    "expected_section": "Deployment",
+    "expected_quote": "GitHub Actions"
+  },
+  {
+    "id": "q10",
+    "question": "Where was the demonstration service deployed?",
+    "expected_section": "Deployment",
+    "expected_quote": "Azure Container Apps"
+  },
+  {
+    "id": "q11",
+    "question": "How were ECG recordings filtered?",
+    "expected_section": "Signal Processing",
+    "expected_quote": "bandpass filters and baseline correction"
+  },
+  {
+    "id": "q12",
+    "question": "Which methods inspected frequency and transient components?",
+    "expected_section": "Signal Processing",
+    "expected_quote": "FFT to inspect frequency components and wavelets"
+  },
+  {
+    "id": "q13",
+    "question": "Which devices used the LoRa bridge?",
+    "expected_section": "Robotics",
+    "expected_quote": "two Raspberry Pi devices"
+  },
+  {
+    "id": "q14",
+    "question": "What improved message delivery?",
+    "expected_section": "Robotics",
+    "expected_quote": "acknowledgements and retries"
+  },
+  {
+    "id": "q15",
+    "question": "What degree was completed in 2025?",
+    "expected_section": "Education",
+    "expected_quote": "Master of Science in Computer Engineering"
+  },
+  {
+    "id": "q16",
+    "question": "What did the thesis investigate?",
+    "expected_section": "Education",
+    "expected_quote": "ECG waveform delineation with a CNN Transformer model"
+  },
+  {
+    "id": "q17",
+    "question": "When did the candidate work as a research assistant?",
+    "expected_section": "Experience",
+    "expected_quote": "from 2023 to 2025"
+  },
+  {
+    "id": "q18",
+    "question": "What is the German language level?",
+    "expected_section": "Languages",
+    "expected_quote": "German B1"
+  },
+  {
+    "id": "q19",
+    "question": "Which language is native?",
+    "expected_section": "Languages",
+    "expected_quote": "Turkish native proficiency"
+  },
+  {
+    "id": "q20",
+    "question": "Where is the candidate based?",
+    "expected_section": "Location",
+    "expected_quote": "Nuremberg, Germany"
+  }
+]

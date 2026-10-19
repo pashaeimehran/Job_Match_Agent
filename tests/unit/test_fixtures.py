@@ -1,7 +1,7 @@
 from src.data_sources.fixtures import load_fixture_jobs
 
 
-def test_fixture_dataset_has_week1_target_size() -> None:
+def test_fixture_dataset_has_expected_case_count() -> None:
     fixtures = load_fixture_jobs()
 
     assert 40 <= len(fixtures) <= 60

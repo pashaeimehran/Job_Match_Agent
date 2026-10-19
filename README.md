@@ -1,159 +1,98 @@
-# Job_Match_Agent
+# CareerMatch AI / Job_Match_Agent
 
-**Status: Week 1 complete and validated.**
+A Germany-focused job matching portfolio project. Implemented capabilities are
+structured job extraction and CV ingestion with evidence retrieval. Job-CV
+ranking, agent orchestration, and the web API remain planned.
 
-An agentic AI system that matches a candidate's CV against AI/ML job postings
-in Germany, explains *why* a job fits or doesn't, and ranks recommendations.
-The project is built incrementally so deterministic logic, LLM reasoning,
-testing, evaluation, and deployment remain separately inspectable.
+## Implemented capabilities
 
-## Week 1 capability
+- Job text cleaning, Pydantic validation, provider-independent structured outputs.
+- Optional BA Jobsuche client and a controlled 40-case extraction fixture set.
+- PDF, Markdown and text CV ingestion with deterministic section-aware chunks.
+- Batched OpenAI embeddings, PostgreSQL/pgvector storage, exact cosine retrieval.
+- CV-scoped search, atomic replacement, embedding configuration checks and deletion.
+- Extractive CV Q&A with checked source IDs and verbatim quotations.
+- Synthetic CV, 20 retrieval questions, chunk-size comparison and offline tests.
 
-Week 1 builds the raw-job-text → validated-`JobPosting` foundation used by the
-rest of the project:
+PostgreSQL integration and live OpenAI retrieval have been validated locally.
+The default configuration achieved 20/20 hit@3 on the synthetic benchmark.
+Both offline lexical and live semantic retrieval reports are included.
 
-1. deterministic HTML/whitespace cleaning,
-2. a constrained Pydantic `JobPosting` schema,
-3. a provider-neutral structured-LLM interface,
-4. an OpenAI implementation using structured outputs,
-5. a Bundesagentur Jobsuche client plus an offline 40-case fixture dataset,
-6. unit tests that do not spend API credits,
-7. a live evaluation script that records extraction success, missing fields,
-   hallucinated fields, and mismatches.
+## Setup and commands
 
-The extractor itself does not construct an OpenAI client or load environment
-variables. Those are application/setup responsibilities, so the extractor is
-provider-independent and easy to test.
-
-## Planned architecture
-
-FastAPI → LangGraph agent → tools (job search / CV retrieval / match
-scoring) → PostgreSQL + pgvector → evaluated with Ragas, traced with
-Langfuse → Docker → Azure.
-
-## Progress
-
-| Version | Capability | Status |
-|---|---|---|
-| v0.1 | Job description → validated structured extraction | ✅ complete |
-| v0.2 | Optional BA source + fixture fallback + extraction evaluation | ✅ complete |
-| v0.3 | CV ingestion + RAG retrieval | 🔲 not started |
-| v0.5 | Tool calling / agent loop | 🔲 not started |
-| v0.7 | REST API + MCP server | 🔲 not started |
-| v1.0 | Deployed on Azure | 🔲 not started |
-
-## Setup
-
-Create/activate your virtual environment, then install the project dependencies:
+Use Python 3.11 or newer and a virtual environment. From the project root:
 
 ```powershell
-python -m pip install -r requirements.txt
-```
-
-Create `.env` from `.env.example` and set your own API key:
-
-```text
-OPENAI_API_KEY=your_key_here
-OPENAI_MODEL=gpt-4o-mini
-```
-
-Never commit `.env` or any separate text file containing a real API key.
-
-## Run the unit tests
-
-Run tests from the repository root:
-
-```powershell
+python -m pip install -r requirements-retrieval.txt
 python -m pytest
+python -m scripts.evaluate_cv_retrieval
 ```
 
-The unit tests use fake clients/providers, so they should not make paid OpenAI
-calls.
-
-## Run the Week 1 live extraction evaluation
-
-Start with 20 fixtures:
+Preserve your existing `.env`; add the new database and embedding settings from
+`.env.example`. Install and start Docker Desktop before database commands.
 
 ```powershell
-python -m scripts.evaluate_week1 --limit 20
+docker compose up -d --wait
+python -m scripts.cv init-db
+python -m scripts.cv ingest data/fixtures/sample_cv.md --cv-id demo
+python -m scripts.cv search "What is the German language level?" --cv-id demo
+python -m scripts.cv ask "What is the German language level?" --cv-id demo
 ```
 
-Run the complete 40-case fixture benchmark:
+Ingest, search and ask use paid OpenAI calls. CV chunks are sent to OpenAI for
+embeddings; ask sends retrieved chunks for answer selection. Start with the
+synthetic fixture. Keep personal documents in ignored `data/private/`.
+See [the application guide](docs/apply_cv_retrieval.md) for all setup, evaluation,
+troubleshooting and Git commands.
+
+## Validation status
+
+Local Windows validation passed all 36 offline tests and the separate
+PostgreSQL integration test. Dependency installation completed successfully.
+Live Q&A returned a source-backed German B1 answer and abstained when asked
+about salary, which the synthetic CV does not specify. These two checks are
+smoke tests, not a comprehensive answer-quality evaluation.
+
+The supplied job extraction report records 40/40 exact fixture passes. It was
+renamed without changing its measurements; no paid extraction run was repeated.
+The set covers 40 variants across 10 output scenarios, not real-world accuracy.
 
 ```powershell
-python -m scripts.evaluate_week1 --limit 0
+python -m scripts.evaluate_job_extraction --limit 0
 ```
 
-The report is written to:
+That command makes paid calls and writes
+`evaluation/results/job_extraction_evaluation.json`.
 
-```text
-evaluation/results/week1_extraction.json
-```
+See [retrieval results](benchmarks/retrieval_baseline.md) and
+[architecture](docs/cv_retrieval_architecture.md).
 
-Week 1's minimum acceptance criterion is an extraction success rate of at least
-90%. Inspect missing/hallucinated/mismatched fields as well; a high schema
-success rate alone does not prove factual extraction quality.
-
-### Week 1 validation result
-
-The full 40-case benchmark completed successfully with `gpt-4o-mini`:
-
-- extraction success: **40/40 (100%)**
-- exact case passes: **40/40 (100%)**
-- missing fields: **0**
-- hallucinated fields: **0**
-- mismatched fields: **0**
-
-The fixture set contains 40 distinct job-text variants across 10 expected-output
-scenarios. It is a controlled regression benchmark, not a claim of production
-accuracy on the wider German job market.
-
-## Optional: fetch live BA Jobsuche postings
+## Optional BA Jobsuche source
 
 ```powershell
 python -m scripts.fetch_ba_jobs --query "Softwareentwickler" --location "Berlin" --limit 10
 ```
 
-This integration uses the public Jobsuche backend documented by the community
-`bundesAPI/jobsuche-api` project. The Bundesagentur für Arbeit does not provide
-this as a stable official developer API, so live requests may be rejected (for
-example with HTTP 403) or change independently of this project. The live BA
-source is therefore optional and is **not** a Week 1 acceptance criterion.
+This uses an unofficial public backend described by the community
+`bundesAPI/jobsuche-api` project, not a guaranteed developer API. HTTP 403 and
+other failures are handled gracefully. Use `data/fixtures/jobs.json` for
+repeatable development when the live source is unavailable.
 
-If the backend is unavailable, the CLI exits cleanly with an explanatory
-message instead of a traceback. The stable offline source for development,
-testing, and evaluation remains `data/fixtures/jobs.json`.
-
-## Repository layout after Week 1
+## Repository layout
 
 ```text
-src/
-├── data_sources/
-│   ├── ba_jobsuche.py
-│   └── fixtures.py
-├── extraction/
-│   ├── cleaning.py
-│   ├── extractor.py
-│   └── schemas.py
-└── llm/
-    ├── openai_provider.py
-    └── provider.py
-
-data/fixtures/jobs.json
-scripts/evaluate_week1.py
-scripts/fetch_ba_jobs.py
-tests/unit/
-evaluation/results/
+src/data_sources/       Optional live job source and fixtures
+src/extraction/         Structured job extraction
+src/llm/                Structured generation provider interface
+src/rag/                CV parsing, embeddings, stores, retrieval, Q&A
+scripts/                Extraction evaluation, CV CLI, retrieval evaluation
+tests/unit/             Offline regression tests
+tests/integration/      Opt-in PostgreSQL checks
+data/fixtures/          Synthetic public examples and evaluation labels
+docs/                   Setup and architecture
+benchmarks/             Measured results and limitations
 ```
-
-## Why this project
-
-Built as a portfolio project targeting AI Engineer / Generative AI Engineer /
-Agentic AI roles in Germany. Each design decision should be testable and
-explainable rather than hidden behind framework magic.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-Copyright © 2026 Mehran Pashaei.
+[MIT](LICENSE). Copyright © 2026 Mehran Pashaei.
