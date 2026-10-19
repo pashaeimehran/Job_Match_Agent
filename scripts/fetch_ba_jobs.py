@@ -25,7 +25,7 @@ def main() -> int:
     except BAJobsucheUnavailable as exc:
         print(f"BA Jobsuche unavailable: {exc}", file=sys.stderr)
         print(
-            "No live-job file was written. Week 1 can still run fully from "
+            "No live-job file was written. Structured Job Extraction can still run fully from "
             "data/fixtures/jobs.json.",
             file=sys.stderr,
         )

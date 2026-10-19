@@ -12,5 +12,9 @@ Roadmap/
 Workspace.code-workspace
 sandbox.py
 data/ba_jobs.json
-week1_*.patch
+*.patch
 pytest-cache-files-*
+
+data/private/
+.update-backups/
+evaluation/results/retrieval_live*.json

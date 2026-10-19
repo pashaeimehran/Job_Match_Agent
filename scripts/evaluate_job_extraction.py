@@ -59,7 +59,7 @@ def compare_case(case: FixtureJob, actual: JobPosting) -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run Week 1 extraction evaluation.")
+    parser = argparse.ArgumentParser(description="Run Structured Job Extraction extraction evaluation.")
     parser.add_argument(
         "--limit",
         type=int,
@@ -68,7 +68,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--output",
-        default="evaluation/results/week1_extraction.json",
+        default="evaluation/results/job_extraction_evaluation.json",
         help="Where to write the JSON report.",
     )
     args = parser.parse_args()
@@ -126,7 +126,7 @@ def main() -> int:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    print("\nWeek 1 evaluation summary")
+    print("\nStructured Job Extraction evaluation summary")
     print(f"Model: {model}")
     print(f"Extraction success: {extracted}/{total} ({report['extraction_success_rate']:.1%})")
     print(f"Exact case passes: {exact_passes}/{total} ({report['exact_case_pass_rate']:.1%})")
